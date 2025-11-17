@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>八代市ごみ出しカレンダー（坂本町）</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>八代市ごみ出しカレンダー（坂本町）</h1>
+
+  <div id="month-selector">
+    <button onclick="prevMonth()">◀</button>
+    <h2 id="current-month"></h2>
+    <button onclick="nextMonth()">▶</button>
+  </div>
+
+  <div id="calendar"></div>
+
+  <button id="notify-btn" onclick="enableNotification()">
+    🔔 リマインドをオンにする
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

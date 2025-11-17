@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background: #fafafa;
+}
+
+#month-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#calendar {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 10px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.day.gomi-燃えるごみ { background: #ffdddd; }
+.day.gomi-資源ごみ { background: #ddffdd; }
+.day.gomi-不燃ごみ { background: #ddddff; }
+.day.gomi-粗大ごみ { background: #fff2cc; }
